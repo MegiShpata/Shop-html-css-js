@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+
+<div class="container">
+<div class="navbar">
+    <div class="logo">
+        <a href="projekt2.html"><img src="l.png" width="85px"></a><!--vendosja e logos-->
+    </div>
+<nav>
+    <ul>
+        <li><a href="projekt2.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="accound.html">Login</a></li>
+        </ul>
+</nav>
+</div>
+</div>
+<!--account page-->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="bcc.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="loginform">
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit" class="btn">Login</button>
+
+                    </form>
+                    <form id="regform">
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--fundi i faqes-->
+<div class="fund">
+    <div class="container">
+        <div class="row">
+            <div class="fund-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps/details?id=com.adidas.app&hl=sq&gl=US" ><img src="goo.png"></a>
+                    <a href="https://apps.apple.com/us/app/adidas/id1266591536" ><img src="app.png" ></a>
+                </div>
+            </div>
+            <div class="fund-col-2">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://sq-al.facebook.com/adidas/">Facebook</a></li>
+                    <li><a href="https://twitter.com/adidas">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/adidas/">Instagram</a></li>
+                </ul>
+                
+        </div>
+        
+    </div>
+</div>
+
+<!-- js form-->
+<script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator = document.getElementById("indicator");
+    
+
+
+    function register(){
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+       
+    }
+    function login(){
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+      
+    }
+
+
+</script>
+
+
+</body>
+
+
+</html>
